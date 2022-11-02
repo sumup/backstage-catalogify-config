@@ -72,7 +72,7 @@ pr:
       providesApis: [ ]
       # List of API's the service is connected to, see openapi or https://sumup.roadie.so/api-docs, required
       consumesApis: [ ]
-    ---
+    #---
     # API definition example
     #apiVersion: backstage.io/v1alpha1
     #kind: API
