@@ -1,7 +1,7 @@
 # Configuration for the pull requests created for the mass-adoption rollout
 pr:
   title: Add project to Backstage Service Catalog
-  description: >
+  description: |
     TODO
     TODO
     TODO
