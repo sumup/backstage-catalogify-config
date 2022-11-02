@@ -2,9 +2,35 @@
 pr:
   title: Add project to Backstage Service Catalog
   description: |
-    TODO
-    TODO
-    TODO
+    ## This automated PR adds the project to the [SumUp Service Catalog](https://sumup.roadie.so/catalog?filters%5Bkind%5D=component&filters%5Buser%5D=all)
+    
+    > It was created by the [Backstage Catalogify Rollout CLI](https://github.com/sumup/backstage-catalogify).
+    
+    Good news regarding our SumUp Service Catalog, one of the initiatives of our [99.99% Reliability efforts](https://docs.google.com/presentation/d/1ZU07c4qqO1svVaE47dcT7cO2lS47Qdm9ObQ0rEClav8/edit#slide=id.g148f9afe725_2_18) (see strategy map[ here](https://miro.com/app/board/uXjVO6L1bxo=/?moveToWidget=3458764533280006805&cot=14))! Like in many other companies, the Service Catalog will help us to organize API documentation, ownership of services, PII tagging, Dependabot alerts, and many other benefits that require a professional inventory.
+    
+    > Per [Backstage use cases](https://backstage.io/docs/features/software-catalog/software-catalog-overview#how-it-works) and [Roadie's recommendation](https://sumup.slack.com/archives/C03V12MRD7A/p1662975548377709?thread_ts=1662734521.151619&cid=C03V12MRD7A), we curate more than just projects in the catalog, but also libraries, internal/external APIs, documentation, and other company resources represented by GitHub repositories, teams and various other domain entities at SumUp.
+    
+    ## What's included
+      
+    This auto-generated PR includes a boilerplate `catalog-info.yaml`,
+    a Backstage Service Catalog Component entry for this project filled out with the bare minimum.
+    
+    ## Please merge first
+    
+    By merging this PR, your repository will automatically be added to [SumUp's Service Catalog](https://sumup.roadie.so/catalog?filters%5Bkind%5D=component&filters%5Buser%5D=all).
+    
+    Please merge this PR first, and when you find time, adapt the `catalog-info.yaml` to contain meaningful data. You will find a tutorial, FAQs, and other docs [here](https://sumupteam.atlassian.net/wiki/spaces/DEV/pages/22050275741/Service+Catalog).
+    
+    ## Our motivations for this PR approach
+    
+    - By auto-generating the PRs, we minimize chore work by repo owners
+    - By [automatically tracking](https://docs.google.com/spreadsheets/d/1xer-AbUXpNEaxb0IysAt_W24f1onK4LuDP5t39YOGX4/edit#gid=0) unmerged `catalog-info.yaml` PRs, we identify repositories without owner
+    - We want all resources in the catalog as early as possible, with minimum effort for the squads. The catalog is our tool of choice for tracking the state of our services/resources. Backstage is the future-proof successor of OpsLevel. By filtering resources by `unspecified` values, we know which repositories still need work and ownership.
+    
+    ### Some known issues are:
+    
+    - During mass adoption the auto-generating PRs will instrument loads of repositories that shouldn't be in the catalog (abandoned-but-not-yet-archived, one-time script collections, etc.) -> We won't merge these PRs so that they won't show up in the catalog.
+
   commitMessage: Add catalog-info.yaml (TODO some link?)
   branch: backstage-service-catalog
   author:
@@ -67,6 +93,8 @@ pr:
       lifecycle: unspecified
       # GitHub team owner, see https://github.com/orgs/sumup/teams, required
       owner: unspecified
+      # The system this Component is part of, recommended
+      system: unspecified
       # List of API's the service exposes, reference name from the API definition section below, required
       # If adding the API's is a blocker, slack #backstage to get our help
       providesApis: [ ]
