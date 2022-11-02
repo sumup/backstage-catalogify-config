@@ -1,0 +1,13 @@
+# Configuration for the pull requests created for the mass-adoption rollout
+pr:
+  title: Add project to Backstage Service Catalog
+  description: >
+    TODO
+    TODO
+    TODO
+  commitMessage: Add catalog-info.yaml (TODO some link?)
+  branch: backstage-service-catalog
+  author:
+    login: backstage-catalogify
+    email: backstage-catalogify@sumup.com
+    name: Backstage Catalogify
