@@ -13,7 +13,7 @@ pr:
     > Per [Backstage use cases](https://backstage.io/docs/features/software-catalog/software-catalog-overview#how-it-works) and [Roadie's recommendation](https://sumup.slack.com/archives/C03V12MRD7A/p1662975548377709?thread_ts=1662734521.151619&cid=C03V12MRD7A), we curate more than just projects in the catalog, but also libraries, internal/external APIs, documentation, and other company resources represented by GitHub repositories, teams and various other domain entities at SumUp.
     
     ## What's included
-      
+    
     This auto-generated PR includes a boilerplate `catalog-info.yaml`,
     a Backstage Service Catalog Component entry for this project filled out with the bare minimum.
     
@@ -74,7 +74,7 @@ pr:
       links: {{ if ne .GetHomepage "" }}
         # Homepage taken from repository website setting, optional
         - title: Homepage
-          url: {{ .GetHomepage }} {{ end }}
+          url: {{ .GetHomepage }}{{ end }}
         # Link to Alerts Runbook, required
         #- title: Alerts Runbook
         #  url: https://sumupteam.atlassian.net/wiki/spaces/DEV/pages/2517664574/Ecom+Platform+Squad+Runbook
@@ -101,7 +101,7 @@ pr:
       # Marks the state of the service (production, experimental, deprecated, see https://backstage.io/docs/features/software-catalog/descriptor-format#speclifecycle-required), required
       lifecycle: unspecified
       # GitHub team owner, see https://github.com/orgs/sumup/teams, required
-      owner: unspecified
+      owner: {{ if ne .CodeOwner "" }}{{ .CodeOwner }}{{ else }}unspecified{{ end }}
       # The system this Component is part of, recommended
       system: unspecified
       # List of API's the service exposes, reference name from the API definition section below, required
