@@ -31,7 +31,7 @@ pr:
     
     - During mass adoption the auto-generating PRs will instrument loads of repositories that shouldn't be in the catalog (abandoned-but-not-yet-archived, one-time script collections, etc.) -> We won't merge these PRs so that they won't show up in the catalog.
 
-  commitMessage: Add catalog-info.yaml (TODO some link?)
+  commitMessage: Add catalog-info.yaml for SumUp's service catalog
   branch: backstage-service-catalog
   author:
     login: backstage-catalogify
