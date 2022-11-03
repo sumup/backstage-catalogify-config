@@ -6,6 +6,8 @@ pr:
     
     > It was created by the [Backstage Catalogify Rollout CLI](https://github.com/sumup/backstage-catalogify).
     
+    ![image](https://user-images.githubusercontent.com/22003767/199686773-2cdf3068-02e5-4d7c-a2d8-1a24d60e86d0.png)
+
     Good news regarding our SumUp Service Catalog, one of the initiatives of our [99.99% Reliability efforts](https://docs.google.com/presentation/d/1ZU07c4qqO1svVaE47dcT7cO2lS47Qdm9ObQ0rEClav8/edit#slide=id.g148f9afe725_2_18) (see strategy map[ here](https://miro.com/app/board/uXjVO6L1bxo=/?moveToWidget=3458764533280006805&cot=14))! Like in many other companies, the Service Catalog will help us to organize API documentation, ownership of services, PII tagging, Dependabot alerts, and many other benefits that require a professional inventory.
     
     > Per [Backstage use cases](https://backstage.io/docs/features/software-catalog/software-catalog-overview#how-it-works) and [Roadie's recommendation](https://sumup.slack.com/archives/C03V12MRD7A/p1662975548377709?thread_ts=1662734521.151619&cid=C03V12MRD7A), we curate more than just projects in the catalog, but also libraries, internal/external APIs, documentation, and other company resources represented by GitHub repositories, teams and various other domain entities at SumUp.
@@ -33,8 +35,10 @@ pr:
 
     ## Support
 
-    If you have any question about the Service Catalog or SumUp's Internal Developer Portal in general,
+    If you have questions about the Service Catalog or SumUp's Internal Developer Portal in general,
     we are happy to support you in our [Slack channel #backstage](https://sumup.slack.com/archives/C03DLS08PRD)!
+
+    There is also an external support channel offered by our Backstage provider at [#roadie-sumup](https://sumup.slack.com/archives/C03V12MRD7A).
 
   commitMessage: Add catalog-info.yaml for SumUp's service catalog
   branch: backstage-service-catalog
