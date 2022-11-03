@@ -74,7 +74,7 @@ pr:
       links: {{ if ne .GetHomepage "" }}
         # Homepage taken from repository website setting, optional
         - title: Homepage
-          url: {{ .GetHomepage }}{{ end }}
+          url: {{ .GetHomepage }}{{ else }}[ ]{{ end }}
         # Link to Alerts Runbook, required
         #- title: Alerts Runbook
         #  url: https://sumupteam.atlassian.net/wiki/spaces/DEV/pages/2517664574/Ecom+Platform+Squad+Runbook
