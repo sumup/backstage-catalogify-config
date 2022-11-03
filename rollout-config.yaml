@@ -31,6 +31,11 @@ pr:
     
     - During mass adoption the auto-generating PRs will instrument loads of repositories that shouldn't be in the catalog (abandoned-but-not-yet-archived, one-time script collections, etc.) -> We won't merge these PRs so that they won't show up in the catalog.
 
+    ## Support
+
+    If you have any question about the Service Catalog or SumUp's Internal Developer Portal in general,
+    we are happy to support you in our [Slack channel #backstage](https://sumup.slack.com/archives/C03DLS08PRD)!
+
   commitMessage: Add catalog-info.yaml for SumUp's service catalog
   branch: backstage-service-catalog
   author:
