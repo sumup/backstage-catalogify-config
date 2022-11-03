@@ -1,6 +1,6 @@
 # Configuration for the pull requests created for the mass-adoption rollout
 pr:
-  title: Add project to Backstage Service Catalog
+  title: Add project to SumUp's Service Catalog
   description: |
     ## This automated PR adds the project to the [SumUp Service Catalog](https://sumup.roadie.so/catalog?filters%5Bkind%5D=component&filters%5Buser%5D=all)
     
