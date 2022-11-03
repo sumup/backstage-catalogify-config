@@ -63,7 +63,7 @@ pr:
         # Slug of the GitHub repo, required
         github.com/project-slug: {{ .GetFullName }}
         # Location of the mkdocs.yml file, optional
-        backstage.io/techdocs-ref: dir:./docs
+        #backstage.io/techdocs-ref: dir:./docs
       # Tags that identify the service by characteristics, required:
       # - pii, if service deals with personal identifiable information)
       # - pci, if service is located in the PCI zone (deals with payments related data)
