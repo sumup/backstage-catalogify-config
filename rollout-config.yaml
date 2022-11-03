@@ -126,6 +126,6 @@ pr:
     #  # Marks the state of the API (production, experimental, deprecated, see https://backstage.io/docs/features/software-catalog/descriptor-format#speclifecycle-required), required
     #  lifecycle: unspecified
     #  # Github team owner, see https://github.com/orgs/sumup/teams, required
-    #  owner: unspecified
+    #  owner: {{ if ne .CodeOwner "" }}{{ .CodeOwner }}{{ else }}unspecified{{ end }}
     #  definition:
     #    $text: https://github.com/sumup/ecom-platform/blob/master/apps/vatcalculator/docs/index.yaml
