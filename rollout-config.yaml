@@ -43,8 +43,8 @@ pr:
   commitMessage: Add catalog-info.yaml for SumUp's service catalog
   branch: backstage-service-catalog
   author:
-    login: backstage-catalogify
-    email: backstage-catalogify@sumup.com
+    login: robinbraemer
+    email: robin.braemer@sumup.com
     name: Backstage Catalogify
   # Source: https://github.com/sumup/roadie-catalog/blob/main/catalog-info.yaml
   catalogInfo: |
