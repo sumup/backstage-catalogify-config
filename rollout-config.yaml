@@ -58,7 +58,7 @@ pr:
       # Human readable version of the name of the service, required
       title: {{ .Title }}
       # Short and crisp description of the service, required
-      description: {{ .GetDescription }}
+      description: {{ if ne .GetDescription "" }}{{ .GetDescription }}{{ else }}''{{ end }}
       annotations:
         # Slug of the GitHub repo, required
         github.com/project-slug: {{ .GetFullName }}
