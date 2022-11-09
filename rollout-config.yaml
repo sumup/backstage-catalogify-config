@@ -40,7 +40,7 @@ pr:
 
     There is also an external support channel offered by our Backstage provider at [#roadie-sumup](https://sumup.slack.com/archives/C03V12MRD7A).
 
-  commitMessage: Docs: Add catalog-info.yaml for SumUp's service catalog
+  commitMessage: "Docs: Add catalog-info.yaml for SumUp's service catalog"
   branch: backstage-service-catalog
   author:
     login: robinbraemer
